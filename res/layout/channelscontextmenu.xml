@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/joinChannel"
+          android:title="Join selected channel." 
+          android:icon="@drawable/join">
+    </item>
+    <item android:id="@+id/deleteNotRequestedChannel"
+          android:title="Delete selected channel." 
+          android:icon="@drawable/delete">
+    </item>
+</menu>

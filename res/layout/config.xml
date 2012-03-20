@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/main_background">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@color/main_background">
+
+		<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/configTitle" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="2dip"
+			android:paddingBottom="2dip" android:paddingLeft="5dip"
+			android:background="@drawable/header" android:textColor="@color/text_color"
+			style="?android:attr/listSeparatorTextViewStyle" android:textSize="18dip"
+			android:text="MobiTrade Setting:" />
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+			<TableRow>
+				<TextView 
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:text="Max Allowed Space (Mb)" android:textColor="@color/text_color"
+					android:textSize="16dip">
+				</TextView>
+
+				<EditText android:id="@+id/maxAllowedSpace"
+					android:layout_width="100dip" android:layout_height="wrap_content"
+					android:textSize="16dip" android:singleLine="true"
+					android:background="@drawable/live_status_background">
+				</EditText>
+			</TableRow>
+
+			<TableRow>
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:text="Use Vibrator Notifications"
+					android:textColor="@color/text_color" android:textSize="16dip">
+				</TextView>
+				<CheckBox android:id="@+id/vibarateCheckBox"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="" />
+			</TableRow>
+
+			<TableRow>
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:text="Keep Always Discovering"
+					android:textColor="@color/text_color" android:textSize="16dip">
+				</TextView>
+				<CheckBox android:id="@+id/alwaysDiscoveringCheckBox"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="" />
+
+			</TableRow>
+
+			<TableRow>
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:text="Discovering on Demand"
+					android:textColor="@color/text_color" android:textSize="16dip">
+				</TextView>
+				<CheckBox android:id="@+id/discoveringOnDemandCheckBox"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="" />
+
+			</TableRow>
+
+			<TableRow>
+				<ImageButton android:id="@+id/updateConfig" android:src="@drawable/update48"
+					android:layout_height="wrap_content" android:layout_width="fill_parent" />
+				<TextView></TextView>
+			</TableRow>
+			<TableRow>
+
+				<ImageButton android:id="@+id/restoreConfig"
+					android:src="@drawable/restore48" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" />
+				<TextView></TextView>
+
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+</ScrollView>

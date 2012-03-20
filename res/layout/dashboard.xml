@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/main_background">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical" android:gravity="center_horizontal">
+
+		<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/liveText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="2dip"
+			android:paddingBottom="2dip" android:paddingLeft="5dip"
+			android:background="@drawable/header" android:textColor="@color/text_color"
+			android:text="Live Status:" style="?android:attr/listSeparatorTextViewStyle"
+			android:textSize="18dip" />
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/live_status_background">
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:paddingTop="2dip" android:paddingBottom="2dip"
+				android:paddingLeft="5dip" android:textColor="@color/list_header_text_color"
+				android:textStyle="bold" android:id="@+id/liveStatus"
+				android:layout_gravity="center_horizontal" />
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:paddingTop="2dip" android:paddingBottom="2dip"
+				android:paddingLeft="5dip" android:textColor="@color/list_header_text_color"
+				android:textStyle="bold" android:id="@+id/liveStatus2"
+				android:layout_gravity="center_horizontal" />
+
+		</LinearLayout>
+
+
+		<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/statistics" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="2dip"
+			android:paddingBottom="2dip" android:paddingLeft="5dip"
+			android:background="@drawable/header" android:textColor="@color/text_color"
+			android:text="Statistics:" style="?android:attr/listSeparatorTextViewStyle"
+			android:textSize="18dip" />
+
+
+		
+			<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+				<TableRow>
+					<TextView android:id="@+id/totalNumberOfChannels"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:textSize="16dip" android:textColor="@color/text_color" 
+						android:text="Total Nbr. of Channels"/>
+
+					<EditText android:id="@+id/totalNumberOfChannelsVal"
+						android:layout_width="100dip" android:layout_height="wrap_content"
+						android:textSize="16dip"
+						android:focusable="false"
+						android:singleLine="true"
+						android:background="@drawable/live_status_background"
+						android:layout_gravity="center_horizontal"
+						>
+					</EditText>
+				</TableRow>
+
+
+				<TableRow>
+					<TextView android:id="@+id/numberOfRequestedChannels"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:textSize="16dip" android:textColor="@color/text_color" 
+						android:text="Nbr. of Requested Channels"/>
+					<EditText android:id="@+id/numberOfRequestedChannelsVal"
+						android:layout_width="100dip" android:layout_height="wrap_content"
+						android:textSize="16dip" android:editable="false"
+						android:focusable="false"
+						android:singleLine="true"
+						android:background="@drawable/live_status_background"
+						android:layout_gravity="center_horizontal"
+						>
+					</EditText>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/totalNumberOfContents"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:textSize="16dip" android:textColor="@color/text_color"
+						android:text="Total Nbr. of Contents" />
+					<EditText android:id="@+id/totalNumberOfContentsVal"
+						android:layout_width="100dip" android:layout_height="wrap_content"
+						android:textSize="16dip"
+						android:focusable="false"
+						android:singleLine="true"
+						android:layout_gravity="center_horizontal"
+						android:background="@drawable/live_status_background"
+						>
+					</EditText>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/totalNumberOfEncounteredUsers"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:textSize="16dip" android:textColor="@color/text_color"
+						android:text="Discovered MobiTrade Users" />
+					<EditText android:id="@+id/totalNumberOfEncounteredUsersVal"
+						android:layout_width="100dip" android:layout_height="wrap_content"
+						android:textSize="16dip"
+						android:focusable="false"
+						android:singleLine="true"
+						android:layout_gravity="center_horizontal"
+						android:background="@drawable/live_status_background"
+						>
+					</EditText>
+
+				</TableRow>
+				<TableRow>
+					<TextView 
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:textSize="16dip" android:textColor="@color/text_color"
+						android:text="% of MobiTrade Used Space " />
+					<EditText android:id="@+id/percentageOfUsedSpace"
+						android:layout_width="100dip" android:layout_height="wrap_content"
+						android:textSize="16dip"
+						android:focusable="false"
+						android:singleLine="true"
+						android:layout_gravity="center_horizontal"
+						android:background="@drawable/live_status_background"
+						>
+					</EditText>
+
+				</TableRow>
+
+			</TableLayout>
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/dashboardText" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingTop="2dip"
+				android:paddingBottom="2dip" android:paddingLeft="5dip"
+				android:background="@drawable/header" android:textColor="@color/text_color"
+				android:text="Dashboard:" style="?android:attr/listSeparatorTextViewStyle"
+				android:textSize="18dip" />
+
+			<Button android:id="@+id/makeDeviceDiscoverable" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Turn On Discoverable Mode" />
+
+			<Button android:id="@+id/startNewDiscoverySession" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Start Discovery" />
+
+			<Button android:id="@+id/requestChannel" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Request a New Channel" />
+
+			<Button android:id="@+id/publishContent" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Publish a New Content" />
+
+
+		</LinearLayout>
+</ScrollView>

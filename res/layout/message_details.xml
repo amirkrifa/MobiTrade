@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/messagedetails"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	
+	<TextView android:id="@+id/messageTitleText" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Title:">
+	</TextView>
+	
+	<EditText android:id="@+id/messageTitleIn" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp">
+	</EditText>
+	
+	<TextView android:id="@+id/messageBodyText" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Body:">
+	</TextView>
+	<EditText android:id="@+id/messageBodyIn" android:layout_width="fill_parent"
+		android:layout_height="100dip" 
+		android:textSize="18sp">
+	</EditText>
+</LinearLayout>

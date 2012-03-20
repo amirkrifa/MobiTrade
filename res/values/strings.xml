@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">MobiTrade</string>
+<string name="dashboard">dashboard</string>
+<string name="config">config</string>
+<string name="contents">contents</string>
+<string name="channels">channels</string>
+<string name="explorer">explorer</string>
+<string name="requestedchannels">Requested Channels</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="main_background">#ffffff</color>
+	<color name="statistics_backgroud">#c0c0c0</color>
+	<color name="top_channels_background">#c0c0c0</color>
+	<color name="text_color">#000000</color>
+	<color name="config_background">#c0c0c0</color>
+	<color name="explorer_text_background">#c0c0c0</color>
+	<color name="list_header_text_color">#000000</color>
+	<color name="list_header_background">#dae1e1</color>
+	<color name="map_options_background">#cff0f0</color>
+	<color name="list_divider_color">#eeeeee</color>
+	<color name="blue">#0000ff</color>
+	<drawable name="android_orange">#FF9E18</drawable>
+	<drawable name="android_yellow">#F2E406</drawable>
+	<color name="white">#ffffff</color>
+
+</resources>

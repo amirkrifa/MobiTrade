@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.MobiTrade" android:versionCode="1" android:versionName="1.0">
+	<application android:icon="@drawable/mobitradeicon72" android:label="@string/app_name" android:debuggable="true">
+		
+		<activity android:name=".MobiTradeMain" 
+		android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" 
+		android:screenOrientation="portrait"
+		android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".DashboardTab" android:label="@string/dashboard" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+		</activity>
+		
+		<activity android:name=".ChannelsTab" android:label="@string/channels" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+		</activity>
+
+		<activity android:name=".RequestedChannelsTab" android:label="@string/requestedchannels" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+		</activity>
+
+		<activity android:name=".ContentsTab" android:label="@string/contents" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+		</activity>
+		
+		<activity android:name=".FileExplorer" android:label="@string/explorer" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+		</activity>
+		
+		<activity android:name=".ConfigTab" android:label="@string/config" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="TabGroupDashboardActivity"></activity>
+		<activity android:name="TabGroupChannelsActivity"></activity>
+		<activity android:name="TabGroupRequestedChannelsActivity"></activity>
+		
+		<service android:name=".network.MobiTradeService"/> 
+		
+	</application>
+	<uses-sdk android:minSdkVersion="8" />
+	
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	
+	
+
+</manifest> 

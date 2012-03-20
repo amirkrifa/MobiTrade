@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/main_background" >
+
+	<TextView android:id="@+id/channelDesc" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textSize="25px"
+		android:textColor="@color/text_color" android:background="@color/explorer_text_background"/>
+
+	<TextView android:id="@+id/path" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textSize="25px" android:background="@color/explorer_text_background"
+		android:textColor="@color/text_color" />
+
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:cacheColorHint="@color/main_background"/>
+
+	<TextView android:id="@android:id/empty" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="No Data" android:textColor="@color/text_color" />
+</LinearLayout>
