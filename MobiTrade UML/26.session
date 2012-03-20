@@ -1,0 +1,11 @@
+window_sizes 1800 1050 450 1344 851 120
+diagrams
+  active  classdiagram_ref 128026 // MobiTrade
+    1075 680 100 4 0 0
+end
+show_stereotypes
+selected classdiagram_ref 128026 // MobiTrade
+open
+  classview_ref 128026 // MobiTrade Classes
+end
+end
